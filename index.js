@@ -210,10 +210,7 @@ console.log("c3 benzinal",c3.benzinal(99) )// 600 döndürür (depo yalnızca 20
  */
 function asenkronCiftSayi(sayi) {
   return new Promise(res => {
-    if(sayi%2 == 0){
-      res(true)
-    }
-    res(false)
+    res(sayi%2 == 0)
     // Promise bekle beni söz
   });
 }
